@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Filter Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Animation Keyframes -->
+    <style>
+      .bg-grid {
+        stroke: #334155;
+        stroke-opacity: 0.15;
+        stroke-width: 1;
+      }
+      .node-pulse {
+        animation: pulse 3s ease-in-out infinite alternate;
+      }
+      .bone-line {
+        stroke-dasharray: 6 6;
+        animation: dash 20s linear infinite;
+      }
+      .wave-path {
+        animation: waveFloat 6s ease-in-out infinite alternate;
+      }
+      .orb-float-1 {
+        animation: orbMove1 12s ease-in-out infinite alternate;
+      }
+      .orb-float-2 {
+        animation: orbMove2 10s ease-in-out infinite alternate;
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.92); opacity: 0.6; }
+        100% { transform: scale(1.15); opacity: 1; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -200; }
+      }
+      @keyframes waveFloat {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-12px) rotate(0.5deg); }
+      }
+      @keyframes orbMove1 {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(50px, -30px); }
+      }
+      @keyframes orbMove2 {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(-40px, 25px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Grid Pattern Overlay -->
+  <g class="bg-grid">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Glowing Ambient Light Orbs (Background layer) -->
+  <circle cx="200" cy="120" r="140" fill="url(#glowGrad1)" class="orb-float-1" />
+  <circle cx="1020" cy="300" r="160" fill="url(#glowGrad2)" class="orb-float-2" />
+
+  <!-- Dynamic Skeletal Rig Nodes & Waveforms (Decorative background/midground) -->
+  <g class="wave-path" opacity="0.35">
+    <!-- Curve Trajectory 1 -->
+    <path d="M 50 360 Q 300 240, 600 320 T 1150 220" fill="none" stroke="#38bdf8" stroke-width="2" class="bone-line" />
+    <!-- Curve Trajectory 2 -->
+    <path d="M 100 80 Q 400 180, 800 90 T 1180 180" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Right Decorative Skeletal Articulation Representation -->
+  <g transform="translate(980, 150)" opacity="0.75">
+    <!-- Pelvis/Root -->
+    <circle cx="0" cy="0" r="7" fill="#38bdf8" filter="url(#glow)" />
+    <!-- Spine -->
+    <line x1="0" y1="0" x2="20" y2="-60" stroke="#818cf8" stroke-width="3" />
+    <!-- Head -->
+    <circle cx="20" cy="-60" r="10" fill="#c084fc" />
+    <!-- Right Arm -->
+    <line x1="15" y1="-45" x2="65" y2="-30" stroke="#38bdf8" stroke-width="2.5" />
+    <circle cx="65" cy="-30" r="5" fill="#38bdf8" />
+    <line x1="65" y1="-30" x2="100" y2="-65" stroke="#38bdf8" stroke-width="2.5" />
+    <circle cx="100" cy="-65" r="4" fill="#38bdf8" />
+    <!-- Left Arm -->
+    <line x1="15" y1="-45" x2="-25" y2="-20" stroke="#818cf8" stroke-width="2.5" />
+    <circle cx="-25" cy="-20" r="5" fill="#818cf8" />
+    <line x1="-25" y1="-20" x2="-55" y2="10" stroke="#818cf8" stroke-width="2.5" />
+    <circle cx="-55" cy="10" r="4" fill="#818cf8" />
+    <!-- Right Leg -->
+    <line x1="0" y1="0" x2="35" y2="55" stroke="#818cf8" stroke-width="2.5" />
+    <circle cx="35" cy="55" r="5" fill="#818cf8" />
+    <line x1="35" y1="55" x2="70" y2="105" stroke="#818cf8" stroke-width="2.5" />
+    <circle cx="70" cy="105" r="4" fill="#c084fc" />
+    <!-- Left Leg -->
+    <line x1="0" y1="0" x2="-30" y2="60" stroke="#38bdf8" stroke-width="2.5" />
+    <circle cx="-30" cy="60" r="5" fill="#38bdf8" />
+    <line x1="-30" y1="60" x2="-40" y2="120" stroke="#38bdf8" stroke-width="2.5" />
+    <circle cx="-40" cy="120" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- Left Accent Nodes -->
+  <g transform="translate(110, 240)" opacity="0.65">
+    <circle cx="0" cy="0" r="6" fill="#38bdf8" class="node-pulse" />
+    <line x1="0" y1="0" x2="50" y2="-40" stroke="#6366f1" stroke-width="2" />
+    <circle cx="50" cy="-40" r="5" fill="#c084fc" />
+    <line x1="50" y1="-40" x2="30" y2="40" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="30" cy="40" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- Central Foreground Content (Unobscured & Crystal Clear) -->
+  <g transform="translate(60, 0)">
+    <!-- Top Category Tag -->
+    <g transform="translate(0, 75)">
+      <rect width="280" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="16" cy="15" r="4" fill="#38bdf8" />
+      <text x="30" y="20" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">CURATED ECOSYSTEM DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="160" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">Awesome Character Animation</text>
+    <text x="0" y="212" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.2">&amp; Motion Optimization</text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="260" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="500">
+      AI Motion Capture • Markerless Tracking • Skeletal Rigging • Physics Trajectory Optimization • Text-to-Motion
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 295)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="65" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">SaaS &amp; Cloud</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(142, 0)">
+        <rect width="150" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="75" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Open-Source Rigs</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(304, 0)">
+        <rect width="145" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="72" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">AI Video Mocap</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(461, 0)">
+        <rect width="165" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="82" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Physics Simulation</text>
+      </g>
+      <!-- Pill 5 -->
+      <g transform="translate(638, 0)">
+        <rect width="135" height="34" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <text x="67" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Game Runtimes</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="0" y="415" width="1200" height="5" fill="url(#titleGrad)" />
+</svg>
