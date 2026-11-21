@@ -44,65 +44,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Mixamo (Adobe)](https://mixamo.com)**  
-
-  Web-based automatic 3D humanoid character rigging service and extensive library of motion-captured animations exportable in FBX and Collada formats.
-
-
-
-- **[DeepMotion (Animate 3D / SayMotion)](https://deepmotion.com)**  
-
-  Cloud AI markerless motion capture and text-to-3D animation platform featuring physics-based foot locking, hand/face tracking, and FBX/BVH/GLB export.
-
-
-
-- **[Move.ai](https://move.ai)**  
-
-  Cloud markerless motion capture platform using computer vision and multi-camera or single-camera video to extract high-fidelity 3D skeletal animation.
-
-
-
-- **[Wonder Dynamics (Autodesk Flow Studio)](https://wonderdynamics.com)**  
-
-  Cloud AI VFX and animation platform that automatically detects actors in live-action footage, captures motion/lighting, and replaces them with rigged CG characters.
-
-
-
-- **[Plask](https://plask.ai)**  
-
-  Browser-based AI motion capture and keyframe animation studio allowing creators to extract 3D skeletal poses from video and edit curves directly in the web.
-
-
-
-- **[Rokoko Studio & Rokoko Vision](https://rokoko.com)**  
-
-  Motion capture software suite and cloud AI video-to-animation tool supporting smartsuit sensor fusion, live streaming to Blender/Unreal/Unity, and motion cleanup.
-
-
-
-- **[ActorCore (Reallusion)](https://reallusion.com)**  
-
-  Cloud library of AAA 3D motion-captured animations and rigged digital humans with interactive browser preview and multi-engine retargeting.
-
-
-
-- **[Kinetix](https://kinetix.tech)**  
-
-  AI-powered 3D animation and emote generation platform transforming user-uploaded videos into game-ready avatar animations via cloud APIs and SDKs.
-
-
-
-- **[Cascadeur (Physics-Assisted Animation & Cloud Tools)](https://cascadeur.com)**  
-
-  Keyframed 3D animation software utilizing AI-assisted secondary motion, center-of-mass trajectory optimization, and angular momentum physics.
-
-
-
-- **[Anyworld Cloud](https://anyworld.ai)**  
-
-  Cloud-based AI 3D character creation, animation, and interactive world-building platform streamlining rigged asset generation for games and virtual environments.
+| Platform | Company Valuation / Revenue | Starting Paid Price | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Mixamo (Adobe)](https://mixamo.com)** | **Valuation: ~$160B+** (Adobe Market Cap; TTM Revenue ~$25.97B) | Free utility ($0 / included with Adobe ecosystem) | **Free forever with Adobe ID**; unlimited auto-rigs and downloads; limited to humanoid bipedal meshes, stores only the single most recently uploaded asset, raw asset file redistribution prohibited. | Web-based automatic 3D humanoid character rigging service and extensive library of motion-captured animations exportable in FBX and Collada formats. |
+| **[Wonder Dynamics (Autodesk Flow Studio)](https://wonderdynamics.com)** | **Valuation: ~$52B+** (Autodesk Market Cap; TTM Revenue ~$7.2B) | Lite: **$10/mo** (billed monthly) or **$7/mo** (billed annually) | **Free tier forever**; 300 credits/mo, 720p maximum export resolution, watermarked renders, 1 GB storage, 100 MB max video upload, 1-person MoCap, and up to 3 custom character uploads. | Cloud AI VFX and animation platform that automatically detects actors in live-action footage, captures motion/lighting, and replaces them with rigged CG characters. |
+| **[Rokoko Studio & Rokoko Vision](https://rokoko.com)** | **Valuation: ~$80M** (Series A extension post-money; ~$50M–$100M est.) | Plus: **$24/mo** (billed annually) or **$29/mo** (billed monthly) | **Starter plan free forever**; 30 seconds/month of Rokoko Vision AI video processing (single-cam), unlimited text-to-motion generation prompts, 5 text-to-motion imports into Studio/month, unlimited `.FBX` export, 1-month cloud asset history; live-streaming excluded. | Motion capture software suite and cloud AI video-to-animation tool supporting smartsuit sensor fusion, live streaming to Blender/Unreal/Unity, and motion cleanup. |
+| **[Kinetix](https://kinetix.tech)** | **Valuation: ~$50M–$75M** ($12.5M venture funding raised; acquired by Runway) | Custom developer SDK / Partner API pricing | **Developer sandbox & trial key access** (or partner integration via Mixamo/Unity Muse); free developer test allocations typically capped at 1 seat, small sandbox emote generation budgets / 3 test projects before custom commercial deployment. | AI-powered 3D animation and emote generation platform transforming user-uploaded videos into game-ready avatar animations via cloud APIs and SDKs. |
+| **[Cascadeur](https://cascadeur.com)** | **Valuation: ~$30M–$50M est.** (Nekki gaming revenue; $1.5M+ standalone AI dev budget) | Indie: **$19/mo** (or **$8/mo** billed annually at $96/yr) | **Free tier forever**; full access to core animation, AutoPhysics, and rigging tools for 1 user, strictly non-commercial/personal/learning use, export limited to proprietary `.casc` format only (no FBX/USD/DAE export). | Keyframed 3D animation software utilizing AI-assisted secondary motion, center-of-mass trajectory optimization, and angular momentum physics. |
+| **[ActorCore (Reallusion)](https://reallusion.com)** | **Valuation: ~$20M–$30M est.** (Reallusion TPEx: 6882; TTM Revenue ~NT$221M / ~$7M USD) | Motion Subscription: **$29/mo** (or $1.50–$12.00 per motion a la carte) | **Free forever account**; includes complimentary starter selection of 30+ free core 3D animations and starter rigged human models, plus free use of the AccuRIG auto-rigging utility; access to remainder of 5,000+ library requires paid downloads. | Cloud library of AAA 3D motion-captured animations and rigged digital humans with interactive browser preview and multi-engine retargeting. |
+| **[Anything World](https://anyworld.ai)** | **Valuation: ~$15M–$25M est.** ($9M+ venture funding raised from Warner Music / Acrew) | Nano: **$30/mo** (or Micro: $60/mo) | **Individual tier free forever**; 15 credits/mo, 1 full model download/mo, 200 library API calls/mo; limited to personal/student use (revenue under $100k) with attribution required. | Cloud-based AI 3D character creation, animation, and interactive world-building platform streamlining rigged asset generation for games and virtual environments. |
+| **[Move.ai](https://move.ai)** | **Valuation: ~$10M–$15M est.** ($17.4M raised; core assets acquired by Oxford Metrics for £525k–£725k) | Starter: **$18/mo** (or **$15/mo** billed annually) | **Free plan**; includes a one-time allocation of 30 non-expiring credits upon signup, max 30 seconds per video clip, Gen 1 processing; no monthly credit refresh on free plan without paid subscription. | Cloud markerless motion capture platform using computer vision and multi-camera or single-camera video to extract high-fidelity 3D skeletal animation. |
+| **[DeepMotion (Animate 3D / SayMotion)](https://deepmotion.com)** | **Valuation: ~$8M–$12M est.** ($8.7M–$10M funding raised; estimated revenue <$2M) | Starter: **$15/mo** (or **$9/mo** billed annually) | **Freemium plan free forever**; 60 seconds/month (60 credits/mo for body tracking; hand/face cost +0.5 cred/sec each), maximum 10 seconds per clip, personal non-commercial use only. | Cloud AI markerless motion capture and text-to-3D animation platform featuring physics-based foot locking, hand/face tracking, and FBX/BVH/GLB export. |
+| **[Plask](https://plask.ai)** | **Valuation: ~$5M–$8M est.** ($2.56M Pre-Series A/Seed funding raised from Smilegate / Naver) | Standard: **$18/mo** (billed annually) or **$50/mo** Pro | **Freemium plan free forever**; 15 seconds of AI motion capture processing per day, 1 GB storage, standard FBX/GLB/BVH export, personal non-commercial use only. | Browser-based AI motion capture and keyframe animation studio allowing creators to extract 3D skeletal poses from video and edit curves directly in the web. |
 
 
 
