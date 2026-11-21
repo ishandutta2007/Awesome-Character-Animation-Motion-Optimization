@@ -67,7 +67,7 @@ The global **3D motion capture and animation software market** is estimated at *
 
 ## 💻 Open-Source GitHub Projects
 
-*Sorted descending by GitHub stargazers count. Star badges link directly to each repository's stargazers page.*
+*Sorted descending by GitHub stargazers count. Stars_Badges link directly to each repository's stargazers page.*
 
 1. **[Google MediaPipe (`google-ai-edge/mediapipe`)](https://github.com/google-ai-edge/mediapipe)**  
    [![Stars](https://img.shields.io/github/stars/google-ai-edge/mediapipe?style=social&color=white)](https://github.com/google-ai-edge/mediapipe/stargazers)  
@@ -203,7 +203,7 @@ Contributions are welcome and appreciated! To add a new open-source project or S
 2. 🌿 **Create a new branch** (`git checkout -b feature/add-tool-name`).
 3. 📝 **Add or update the entry** in `README.md` keeping formatting consistent:
    - For SaaS: Add company valuation/revenue, exact starting paid tier price, and specific free tier/trial limits.
-   - For Open-Source: Include the repository star badge with `style=social&color=white` linked to `/stargazers`.
+   - For Open-Source: Include the repository Stars_Badge with `style=social&color=white` linked to `/stargazers`.
 4. 🚀 **Submit a Pull Request** with a concise description of the tool and why it fits this ecosystem.
 
 ---
